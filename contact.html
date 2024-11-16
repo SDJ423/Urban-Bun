@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Urban Bun</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon-32x32.png" type="image/png">
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="about.html">About Us</a>
+            <a href="locations.html">Locations</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>If you have any questions, want to book our food truck for an event, or just want to say hello, we’d love to hear from you! You can reach us by filling out the contact form below or via any of our social media channels.</p>
+
+            <h3>Our Contact Information</h3>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:info@theurbanbun.com">info@theurbanbun.com</a></li>
+                <li><strong>Phone:</strong> (555) 123-4567</li>
+            </ul>
+
+            <h3>Follow Us on Social Media</h3>
+            <p>Stay connected and keep up-to-date with our latest news, locations, and menu specials!</p>
+            <ul>
+                <li><a href="https://www.instagram.com/dripcommittee" target="_blank">Instagram</a></li>
+                <li><a href="https://www.facebook.com/TheUrbanBunFoodTruck" target="_blank">Facebook</a></li>
+                <li><a href="https://twitter.com/TheUrbanBunTruck" target="_blank">Twitter</a></li>
+            </ul>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </section>
+
+        <!-- Menu Suggestions Section -->
+        <section class="menu-suggestions">
+            <h2>Menu Suggestions</h2>
+            <p>Got a great idea for a new hot dog or topping? We'd love to hear your suggestions! Fill out the form below to share your creativity with us.</p>
+            <form action="submit_suggestion.php" method="post">
+                <label for="suggestion-name">Your Name:</label>
+                <input type="text" id="suggestion-name" name="suggestion-name" required>
+
+                <label for="suggestion-email">Your Email:</label>
+                <input type="email" id="suggestion-email" name="suggestion-email" required>
+
+                <label for="suggestion">Your Suggestion:</label>
+                <textarea id="suggestion" name="suggestion" rows="4" placeholder="Describe your hot dog idea, toppings, or menu suggestion!" required></textarea>
+
+                <button type="submit" class="button">Submit Suggestion</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 The Urban Bun | <a href="contact.html">Contact Us</a> | Follow us on social media!</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Importing Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333; /* Neutral dark color for text */
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #ffecd2, #fcb69f); /* Soft, lively gradient */
+}
+
+/* Header */
+header {
+    background-color: #ff6f61; /* Vibrant coral for branding */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5rem;
+}
+
+nav a {
+    color: #ffe5d9;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffdab9; /* Highlighted link color */
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff; /* Clean white for content */
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #ff6f61; /* Accent color for headings */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Menu Items */
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.menu-item {
+    width: 300px;
+    border: 2px solid #ffd8cc;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fffaf6; /* Soft pastel for cards */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.menu-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.menu-item h3 {
+    color: #ff5722; /* Bold orange for readability */
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.menu-item p {
+    color: #666; /* Neutral gray for descriptions */
+}
+
+/* Location Section */
+.location {
+    background-color: #fff7e6; /* Soft yellow for highlighting */
+    padding: 20px;
+    border-left: 5px solid #ff6f61;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer */
+footer {
+    background: #ff5722; /* Bold orange for footer */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+footer a {
+    color: #ffe5d9; /* Pastel link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffd8cc; /* Brighter pastel on hover */
+    text-decoration: underline;
+}
+
+/* Buttons */
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+a.button:hover {
+    background-color: #ff836e; /* Slightly lighter coral */
+    transform: translateY(-3px);
+}
+
+/* Video Styling */
+video {
+    width: 100%; /* Makes the video 100% of its container's width */
+    height: auto; /* Keeps aspect ratio intact */
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 16px;
+    }
+
+    header, main, footer {
+        padding: 15px;
+    }
+
+    .menu-item {
+        width: 90%;
+    }
+}
+
