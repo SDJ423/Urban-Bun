@@ -1,0 +1,10 @@
+# Project Title
+
+## Objective
+...
+
+## Architecture Overview
+| Component | Azure Service Used | Purpose |
+|-----------|--------------------|---------|
+| Static Website | Azure Storage | Hosts static content |
+...
